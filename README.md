@@ -5,6 +5,8 @@ Demonstrates potential memory leak in SLED.
 #cd sltest 
 #cargo build --release 
 #./target/release/sltest > x.log
-# top -p `pgrep sltest`
+#top -p `pgrep sltest`
 ```
-watch RES (Resident Set Size) grow unbounded
+
+Expected: constant RES (Resident Set Size)
+Observed:  RES (Resident Set Size) grows unbounded.
