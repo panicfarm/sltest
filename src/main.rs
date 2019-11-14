@@ -1,5 +1,4 @@
 use rand::Rng;
-use sled::*;
 use tempfile::tempdir;
 
 fn main() {
