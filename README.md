@@ -9,4 +9,5 @@ Demonstrates potential memory leak in SLED.
 ```
 
 Expected: constant RES (Resident Set Size)
+
 Observed:  RES (Resident Set Size) grows unbounded.
